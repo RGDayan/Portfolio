@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: "Shippori";
+	src: url("/storage/app/public/font/ShipporiAntique-Regular.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Mukta";
+	src: url("/storage/app/public/font/Mukta-Regular.ttf") format('truetype');
+}
+
+.font-mukta{
+	font-family: "Mukta";
+}
 
 
 /*Animation en background*/
