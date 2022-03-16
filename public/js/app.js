@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   var colors = ['#fdba74'];
 
   function createSparkle() {
-    var body = document.querySelector("body");
+    var body = document.getElementById("sparkle");
     var sparkle = document.createElement('span');
     sparkle.style.width = '2px';
     sparkle.style.height = '2px';
@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
     body.appendChild(sparkle);
     setTimeout(function () {
       sparkle.remove();
-    }, 5000);
+    }, 10000);
   }
 
-  setInterval(createSparkle, 150);
+  setInterval(createSparkle, 250);
 });
 
 /***/ }),

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     ]
     
     function createSparkle(){
-        const body = document.querySelector("body");
+        const body = document.getElementById("sparkle");
         const sparkle = document.createElement('span');
 
         sparkle.style.width = '2px';
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         setTimeout(() =>{
             sparkle.remove()
-        },5000)
+        },10000)
     }
-    setInterval(createSparkle, 150);
+    setInterval(createSparkle, 250);
 })
