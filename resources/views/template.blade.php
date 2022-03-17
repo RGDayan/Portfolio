@@ -46,21 +46,22 @@
         w-0 h-full
         bg-gradient-to-b from-orange-300 via-orange-500 to-orange-700
         bg-opacity-75
-        text-white text-center
+        text-white text-center text-xl font-semibold
         overflow-hidden
         transition-all duration-300 ease-in-out
         z-60
-        md:w-full" id="menu_nav">
+        md:w-full md:h-8 md:bg-none" id="menu_nav">
         {{-- Liste des liens aux pages --}}
         <ul class="flex flex-col
             h-full
-            justify-evenly">
-            <li>Mes projets</li>
-            <li>Mes compétences</li>
-            <li>Mes expériences professionnelles</li>
-            <li>Mon parcours</li>
-            <li>Mon CV</li>
-            <li>Contact</li>
+            justify-evenly 
+            md:flex-row md:items-center">
+            <li><a href="#" class="link-underline link-underline-white">Mes projets</a></li>
+            <li><a href="#" class="link-underline link-underline-white">Mes compétences</a></li>
+            <li><a href="#" class="link-underline link-underline-white">Mes expériences professionnelles</a></li>
+            <li><a href="#" class="link-underline link-underline-white">Mon parcours</a></li>
+            <li><a href="#" class="link-underline link-underline-white">Mon CV</a></li>
+            <li><a href="#" class="link-underline link-underline-white">Contact</a></li>
         </ul>
     </nav>
 
