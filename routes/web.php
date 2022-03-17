@@ -15,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 // Accueil
 Route::get('/', function () {
-    return view('template');
+    return view('accueil');
+});
+Route::get('/accueil', function () {
+    return view('accueil');
 });
