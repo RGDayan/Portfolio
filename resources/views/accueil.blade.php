@@ -66,7 +66,7 @@
                 text-2xl text-center text-white text-xl font-medium
                 md:w-1/2">
             Développeur web et logiciel, graphiste amateur,
-            streamer à mes temps perdus et créateur de contenu.
+            streamer et créateur de contenu.
             <br>
             <br>
             Parcourez mon portfolio à votre guise pour découvrir 

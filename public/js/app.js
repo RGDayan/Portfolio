@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
     sparkle.style.position = "absolute";
     sparkle.style.borderRadius = "80px"; // Random position
 
-    sparkle.style.top = Math.random() * innerHeight + 'px';
-    sparkle.style.left = Math.random() * innerWidth + 'px'; // Emission et couleurs
+    sparkle.style.top = Math.random() * parseInt(body.clientHeight) + 'px';
+    sparkle.style.left = Math.random() * parseInt(body.clientWidth) + 'px'; // Emission et couleurs
 
     sparkle.style.boxShadow = "0px 0px 6px 2px " + colors[Math.floor(Math.random() * colors.length)];
     sparkle.style.background = colors[Math.floor(Math.random() * colors.length)]; // Attribution de la particule à la <div> fixe
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   } // Appel constant par interval de la fonction createSparkle
 
 
-  setInterval(CreateSparkle, 250); // Création des évenements concernant la navigation
+  setInterval(CreateSparkle, 200); // Création des évenements concernant la navigation
 
   SwitchNavigationVisibility();
 });

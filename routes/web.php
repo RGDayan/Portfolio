@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProjetController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,8 @@ Route::get('/', function () {
 });
 Route::get('/accueil', function () {
     return view('accueil');
-});
+})->name('accueil');
+
+// Projets
+Route::get('/mes-projets', [ProjetController::class, 'index'])->name('projets');
+Route::get('/projet/{id}', [ProjetController::class, 'show'])->name('projet');

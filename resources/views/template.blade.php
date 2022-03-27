@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="w-full h-full 
-      m-0 p-0">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" 
+    class="w-full h-screen
+        m-0 p-0">
 
 <head>
     <meta charset="utf-8">
@@ -19,12 +20,10 @@
 
 </head>
 
-<body class="w-full h-full
+<body class="w-full h-fit min-h-full
             m-0 p-0
-            overflow-x-hidden">
-
-    {{-- Avant-plan de particules --}}
-    <div class="fixed z-40" id="sparkle"></div>
+            overflow-x-hidden"
+            id="sparkle">
 
     {{-- Bouton de navigation --}}
     <div
@@ -51,17 +50,21 @@
         transition-all duration-300 ease-in-out
         z-60
         md:w-full md:h-8 md:bg-none" id="menu_nav">
+
         {{-- Liste des liens aux pages --}}
         <ul class="flex flex-col
             h-full
             justify-evenly 
             md:flex-row md:items-center">
-            <li><a href="#" class="link-underline link-underline-white">Mes projets</a></li>
+
+            <li><a href="{{ route('accueil') }}" class="link-underline link-underline-white">Accueil</a></li>
+            <li><a href="{{ route('projets') }}" class="link-underline link-underline-white">Mes projets</a></li>
             <li><a href="#" class="link-underline link-underline-white">Mes compétences</a></li>
             <li><a href="#" class="link-underline link-underline-white">Mes expériences professionnelles</a></li>
             <li><a href="#" class="link-underline link-underline-white">Mon parcours</a></li>
             <li><a href="#" class="link-underline link-underline-white">Mon CV</a></li>
             <li><a href="#" class="link-underline link-underline-white">Contact</a></li>
+
         </ul>
     </nav>
 

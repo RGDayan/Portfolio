@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         sparkle.style.borderRadius = "80px";
 
         // Random position
-        sparkle.style.top = Math.random() * innerHeight + 'px';
-        sparkle.style.left = Math.random() * innerWidth + 'px';
+        sparkle.style.top = Math.random() * parseInt(body.clientHeight) + 'px';
+        sparkle.style.left = Math.random() * parseInt(body.clientWidth) + 'px';
 
         // Emission et couleurs
         sparkle.style.boxShadow = "0px 0px 6px 2px " + colors[Math.floor(Math.random()*colors.length)];
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     // Appel constant par interval de la fonction createSparkle
-    setInterval(CreateSparkle, 250);
+    setInterval(CreateSparkle, 200);
 
     // Création des évenements concernant la navigation
     SwitchNavigationVisibility();
