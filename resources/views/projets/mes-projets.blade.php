@@ -20,7 +20,7 @@
                 style="background-image: url('{{ $projet->img }}');">
                 <a href="{{ route('projet', $projet->id) }} ">
                     <h2 class="text-lg font-semibold">{{ $projet->titre }}</h2>
-                    <p>{{ $projet->intro }}</p>
+                    <p class="p-2">{{ $projet->intro }}</p>
                 </a>
             </div>
         @endforeach

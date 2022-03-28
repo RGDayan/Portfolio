@@ -27,7 +27,7 @@
 
     {{-- Bouton de navigation --}}
     <div
-        class=" md:invisible "
+        class="md:invisible "
         id="btn_nav">
         {{-- Ouvrir le menu de nav --}}
         <ion-icon 

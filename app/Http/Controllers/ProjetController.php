@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Projet;
 use App\Http\Requests\StoreProjetRequest;
 use App\Http\Requests\UpdateProjetRequest;
+use DB;
 
 class ProjetController extends Controller
 {
@@ -15,7 +16,7 @@ class ProjetController extends Controller
      */
     public function index()
     {
-        $projets = Projet::all();
+        $projets = Projet::all()->sortByDesc('id');
         return view('projets.mes-projets', compact('projets'));
     }
 

@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'KingThings';
+    src: url('Font/Titre_KingThings/kingthings_calligraphica_2-webfont.woff2') format('woff2'),
+         url('Font/Titre_KingThings/kingthings_calligraphica_2-webfont.woff') format('woff'),
+         url('Font/Titre_KingThings/Kingthings_Calligraphica_2.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Chantelli';
+    src: url('Font/H2_Chantelli/chantelli_antiqua-webfont.woff2') format('woff2'),
+         url('Font/H2_Chantelli/chantelli_antiqua-webfont.woff') format('woff'),
+         url('Font/H2_Chantelli/Chantelli_Antiqua.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	margin: 0;
+	background-image: url("Image/Body_Background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+header{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#photo_de_profile{
+	border : ridge black;
+	float: left;
+	margin-left: 5%;
+}
+h1{
+	font-family: KingThings;
+	text-align: center;
+	font-size : 100px;
+	line-height: 2;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+h1 strong{
+	background: -webkit-linear-gradient(45deg, #DB0000, #F5DE17);
+ 	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+h3{	
+	text-align: center;
+	font-size: 30px;
+	margin-top: 0;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+h3 strong{
+	font-size: 40px;
+	font-family: KingThings;
+	background: -webkit-linear-gradient(90deg, #DB0000, #F5DE17);
+ 	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+.table{
+	display: table-cell;
+	table-layout: 50%;
+}
+section{
+	margin: 3%;
+}
+section  ul article{ 	
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+section  li{
+	text-align: center;
+	margin-right: 10%;
+	margin-left: 10%;
+	list-style-type : none;
+	font-size: 22px;
+}
+
+ul h2 {
+	font-family: Chantelli;
+	margin-left: 25%;
+	margin-right: 25%;
+	border-bottom: blue solid 2px;
+}
+
+
+
+footer{ 
+	font-size: 20px;
+	line-height: 0;
+	padding-right: 10%;
+	text-align: right;
+	border-top: black solid 3px;
+}
+footer h2{
+	text-decoration: underline;
+}
+footer ul{
+	list-style-type: none;
+}
+#FB_Logo{
+	width: 50px;
+}
+#LkI_Logo{
+	width: 35px;
+}
+#Twitter_Logo{
+	width: 36px;
+	margin-left: 8px;
+}
+#Twitch_Logo{
+	width: 35px;
+	margin-left: 8px;
+}

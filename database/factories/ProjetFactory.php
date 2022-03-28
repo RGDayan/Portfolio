@@ -16,6 +16,7 @@ class ProjetFactory extends Factory
         return [
             'titre' => $this->faker->sentence(3, true),
             'intro' => $this->faker->sentence(5, true),
+            'type' => $this->faker->word(),
             'contexte' => $this->faker->sentence(10, true),
             'description' => $this->faker->sentence(10, true),
             'poste' => $this->faker->word(),

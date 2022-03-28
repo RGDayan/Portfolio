@@ -17,8 +17,9 @@ class CreateProjetsTable extends Migration
             $table->id();
             $table->string('titre');
             $table->string('intro');
-            $table->string('contexte');
-            $table->string('description');
+            $table->string('type');
+            $table->string('contexte', 1000);
+            $table->string('description', 1000);
             $table->string('poste');
             $table->integer('taille_equipe');
             $table->string('github');
