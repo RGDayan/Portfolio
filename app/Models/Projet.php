@@ -14,7 +14,7 @@ class Projet extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function technologies(): HasMany
+    public function technologies()
     {
         return $this->hasMany(Technologie::class);
     }
@@ -24,8 +24,18 @@ class Projet extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function outils(): HasMany
+    public function outils()
     {
         return $this->hasMany(Outil::class);
+    }
+
+    /**
+     * Get all of the photos for the Projet
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function photos()
+    {
+        return $this->hasMany(Photo::class);
     }
 }

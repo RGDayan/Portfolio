@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" 
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}"
     class="w-full h-screen
         m-0 p-0">
 
@@ -14,6 +14,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 
     {{-- Javascript --}}
     <script src="{{ asset('js/app.js') }}"></script>
@@ -30,12 +33,12 @@
         class="md:invisible "
         id="btn_nav">
         {{-- Ouvrir le menu de nav --}}
-        <ion-icon 
-            name="menu-outline" 
-            class="font-bold" 
+        <ion-icon
+            name="menu-outline"
+            class="font-bold"
             id="icon_ouvrir_nav"></ion-icon>
         {{-- Fermer le menu de nav --}}
-        <ion-icon 
+        <ion-icon
             name="close-outline"
             id="icon_fermer_nav"></ion-icon>
     </div>
@@ -54,7 +57,7 @@
         {{-- Liste des liens aux pages --}}
         <ul class="flex flex-col
             h-full
-            justify-evenly 
+            justify-evenly
             md:flex-row md:items-center">
 
             <li><a href="{{ route('accueil') }}" class="link-underline link-underline-white">Accueil</a></li>
@@ -82,7 +85,7 @@
             mb-4">
 
             {{-- Section : Redirections sur les pages --}}
-            <div class="flex flex-col 
+            <div class="flex flex-col
                     h-fit
                     mb-3">
 

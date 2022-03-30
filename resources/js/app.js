@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    
+
     //Couleur des particules
     const colors = [
         '#fdba74'
     ]
-    
+
     // ---------------------------------------------------------
     // Fonction CreateSparkle()
     // Ne prend pas de paramètre
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Dimension de la particule
         sparkle.style.width = '2px';
         sparkle.style.height = '2px';
-        
+
         // Attributs
         sparkle.style.zIndex = "1";
         sparkle.style.position = "absolute";
@@ -78,4 +78,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Création des évenements concernant la navigation
     SwitchNavigationVisibility();
+
 })

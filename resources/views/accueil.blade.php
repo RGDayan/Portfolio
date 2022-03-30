@@ -1,7 +1,7 @@
 @extends('template')
 
 @section('main')
-    
+
     {{-- Header --}}
     <header
         class="flex flex-col
@@ -12,13 +12,13 @@
         oncontextmenu="return false">
 
         {{-- Vidéo en Background --}}
-        <video autoplay muted loop src="{{ asset('storage/video/wireBlock.mp4') }}" type="video/mp4">
+        <video autoplay muted loop src="{{ asset('storage/video/wireBlock.mp4') }}" class="w-full" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
         {{-- Logo + Texte en ForeGround --}}
         <div
-            class="absolute 
+            class="absolute
                 flex flex-col
                 items-center
                 text-center
@@ -26,16 +26,16 @@
                 text-base
                 font-normal
                 md:flex-row
-                phone:font-semibold 
+                phone:font-semibold
                 phone:text-xl">
 
             {{-- Logo --}}
             <img class="w-16
                     rounded-full
-                    shadow-4xl-center shadow-orange-600 
+                    shadow-4xl-center shadow-orange-600
                     anti
                     phone:w-44"
-                src="{{ asset('storage/image/Logo_Dayan.png') }}" />
+                src="{{ asset('storage/image/accueil/Logo_Dayan.png') }}" />
 
             <div>
                 {{-- Texte --}}
@@ -57,21 +57,25 @@
             mt-4">
 
         {{-- Présentation --}}
-        <p
-            class="p-10
-                bg-gradient-to-br from-yellow-500 to-orange-600 
-                opacity-90
-                shadow-2xl shadow-gray-400 
-                rounded-fancy-1
-                text-2xl text-center text-white text-xl font-medium
-                md:w-1/2">
-            Développeur web et logiciel, graphiste amateur,
-            streamer et créateur de contenu.
-            <br>
-            <br>
-            Parcourez mon portfolio à votre guise pour découvrir 
-            mon profil, mes projets et mon parcours.
-        </p>
+        <div class="flex
+            justify-center align-middle
+
+            bg-gradient-to-br from-yellow-500 to-orange-600
+            opacity-90
+            shadow-2xl shadow-gray-400
+            rounded-fancy-1
+            text-2xl text-center text-white text-xl font-medium
+            md:h-60 md:w-1/2">
+            <p
+                class="h-fit p-10">
+                Développeur web et logiciel, graphiste amateur,
+                streamer et créateur de contenu.
+                <br>
+                <br>
+                Parcourez mon portfolio à votre guise pour découvrir
+                mon profil, mes projets et mon parcours.
+            </p>
+        </div>
 
         {{-- Développement Web --}}
         <div
@@ -84,12 +88,12 @@
             <img class="absolute
                     w-11/12
                     -z-10"
-                src="{{ asset('storage/image/fond_dev_web.png') }}">
+                src="{{ asset('storage/image/accueil/fond_dev_web.png') }}">
 
             <div
                 class="m-2 p-5 mt-36
                     bg-white
-                    shadow-xl shadow-orange-400 
+                    shadow-xl shadow-orange-400
                     rounded-xl">
 
                 {{-- Titre --}}
@@ -107,7 +111,7 @@
                     différents aspects d'une page :
                     <br>
                     <br>
-                <ul class="ml-5 pb-7 
+                <ul class="ml-5 pb-7
                                 font-medium">
                     <li class="pr-10">- Le contenu avec HTML5</li>
                     <li class="pr-10">- Le style avec CSS et ses FrameWorks</li>
@@ -132,12 +136,12 @@
             <img class="absolute
                     w-11/12
                     -z-10"
-                src="{{ asset('storage/image/fond_dev_soft.png') }}">
+                src="{{ asset('storage/image/accueil/fond_dev_soft.png') }}">
 
             <div
                 class="m-2 p-5 mt-36
                     bg-white
-                    shadow-xl shadow-orange-400 
+                    shadow-xl shadow-orange-400
                     rounded-xl">
 
                 {{-- Titre --}}
@@ -178,12 +182,12 @@
             <img class="absolute
                     w-11/12
                     -z-10"
-                src="{{ asset('storage/image/fond_gestion_projet.png') }}">
+                src="{{ asset('storage/image/accueil/fond_gestion_projet.png') }}">
 
             <div
                 class="m-2 p-5 mt-36
                     bg-white
-                    shadow-xl shadow-orange-400 
+                    shadow-xl shadow-orange-400
                     rounded-xl">
 
                 {{-- Titre --}}
@@ -222,12 +226,12 @@
             <img class="absolute
                     w-11/12
                     -z-10"
-                src="{{ asset('storage/image/fond_stream.png') }}">
+                src="{{ asset('storage/image/accueil/fond_stream.png') }}">
 
             <div
                 class="m-2 p-5 mt-36
                     bg-white
-                    shadow-xl shadow-orange-400 
+                    shadow-xl shadow-orange-400
                     rounded-xl">
 
                 {{-- Titre --}}
@@ -249,12 +253,12 @@
 
 
         {{-- Photo de profil --}}
-        <img class="w-full md:max-w-md 
+        <img class="w-full md:max-w-md
                         md:rounded-full
                         mt-10
-                        shadow-xl shadow-zinc-900 
+                        shadow-xl shadow-zinc-900
                         z-50"
-            src="{{ asset('storage/image/photo_profil.jpg') }}">
+            src="{{ asset('storage/image/accueil/photo_profil.jpg') }}">
 
     </main>
 @endsection
