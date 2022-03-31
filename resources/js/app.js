@@ -73,6 +73,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         })
     }
 
+    function SwitchNavColorOnScroll(){
+
+    }
+  
     // Appel constant par interval de la fonction createSparkle
     setInterval(CreateSparkle, 200);
 

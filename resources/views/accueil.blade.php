@@ -54,18 +54,16 @@
     <main class="flex flex-col
             w-full
             items-center
-            mt-4">
+            mt-4 md:px-10">
 
         {{-- Présentation --}}
         <div class="flex
             justify-center align-middle
-
             bg-gradient-to-br from-yellow-500 to-orange-600
             opacity-90
             shadow-2xl shadow-gray-400
             rounded-fancy-1
-            text-2xl text-center text-white text-xl font-medium
-            md:h-60 md:w-1/2">
+            text-2xl text-center text-white text-xl font-medium md:w-1/2">
             <p
                 class="h-fit p-10">
                 Développeur web et logiciel, graphiste amateur,
@@ -83,18 +81,23 @@
                 w-full
                 items-center
                 mt-10
-                lg:flex-row">
+                lg:flex-row-reverse
+                lg:justify-evenly">
 
             <img class="absolute
                     w-11/12
-                    -z-10"
+                    -z-10
+                    md:max-w-2xl
+                    md:relative
+                    md:rounded-lg"
                 src="{{ asset('storage/image/accueil/fond_dev_web.png') }}">
 
             <div
                 class="m-2 p-5 mt-36
                     bg-white
                     shadow-xl shadow-orange-400
-                    rounded-xl">
+                    rounded-xl
+                    md:mt-0">
 
                 {{-- Titre --}}
                 <h1
@@ -130,19 +133,24 @@
                 w-full
                 items-center
                 mt-10
-                lg:flex-row">
+                lg:flex-row
+                lg:justify-evenly">
 
             {{-- Image --}}
             <img class="absolute
                     w-11/12
-                    -z-10"
+                    -z-10
+                    md:max-w-2xl
+                    md:relative
+                    md:rounded-lg"
                 src="{{ asset('storage/image/accueil/fond_dev_soft.png') }}">
 
             <div
                 class="m-2 p-5 mt-36
                     bg-white
                     shadow-xl shadow-orange-400
-                    rounded-xl">
+                    rounded-xl
+                    md:m-0">
 
                 {{-- Titre --}}
                 <h1
@@ -176,19 +184,24 @@
             w-full
             items-center
             mt-10
-            lg:flex-row">
+            lg:flex-row-reverse
+            lg:justify-evenly">
 
             {{-- Image --}}
             <img class="absolute
                     w-11/12
-                    -z-10"
+                    -z-10
+                    md:max-w-2xl
+                    md:relative
+                    md:rounded-lg"
                 src="{{ asset('storage/image/accueil/fond_gestion_projet.png') }}">
 
             <div
                 class="m-2 p-5 mt-36
                     bg-white
                     shadow-xl shadow-orange-400
-                    rounded-xl">
+                    rounded-xl
+                    md:mt-0">
 
                 {{-- Titre --}}
                 <h1
@@ -220,19 +233,24 @@
             w-full
             items-center
             mt-10
-            lg:flex-row">
+            lg:flex-row
+            lg:justify-evenly">
 
             {{-- Image --}}
             <img class="absolute
                     w-11/12
-                    -z-10"
+                    -z-10
+                    md:max-w-2xl
+                    md:relative
+                    md:rounded-lg"
                 src="{{ asset('storage/image/accueil/fond_stream.png') }}">
 
             <div
                 class="m-2 p-5 mt-36
                     bg-white
                     shadow-xl shadow-orange-400
-                    rounded-xl">
+                    rounded-xl
+                    md:mt-0">
 
                 {{-- Titre --}}
                 <h1
@@ -257,7 +275,8 @@
                         md:rounded-full
                         mt-10
                         shadow-xl shadow-zinc-900
-                        z-50"
+                        z-50
+                        md:mb-10"
             src="{{ asset('storage/image/accueil/photo_profil.jpg') }}">
 
     </main>

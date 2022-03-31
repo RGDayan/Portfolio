@@ -52,7 +52,7 @@
         overflow-hidden
         transition-all duration-300 ease-in-out
         z-60
-        md:w-full md:h-8 md:bg-none" id="menu_nav">
+        md:w-full md:h-16 md:bg-none" id="menu_nav">
 
         {{-- Liste des liens aux pages --}}
         <ul class="flex flex-col

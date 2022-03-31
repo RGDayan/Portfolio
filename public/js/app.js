@@ -66,7 +66,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
       menu_nav.classList.toggle('w-0');
       menu_nav.classList.toggle('w-full');
     });
-  } // Appel constant par interval de la fonction createSparkle
+  }
+
+  function SwitchNavColorOnScroll() {} // Appel constant par interval de la fonction createSparkle
 
 
   setInterval(CreateSparkle, 200); // Création des évenements concernant la navigation

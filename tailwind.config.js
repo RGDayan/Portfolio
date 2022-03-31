@@ -4,7 +4,10 @@ module.exports = {
     './resources/**/*.js',
     './resources/**/*.vue',
   ],
-  content: [],
+  content: [
+      './src/**/*.{html,js}',
+      './node_modules/tw-elements/dist/js/**/*.js',
+    ],
   theme: {
     extend: {
       screens: {
@@ -37,5 +40,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin'),
+  ],
 }
