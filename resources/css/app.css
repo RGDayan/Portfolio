@@ -4,17 +4,30 @@
 
 @layer components{
 	#btn_nav{
-		@apply fixed 
+		@apply fixed
         flex
         justify-center items-center m-1 p-2
         text-3xl font-bold text-white
         rounded-full
-        shadow-inner-xl shadow-orange-600 
-        hover:bg-gray-500 hover:bg-opacity-50 
+        shadow-inner-xl shadow-orange-600
+        hover:bg-gray-500 hover:bg-opacity-50
         hover:shadow-orange-400
         transition-all
 		z-70;
 	}
+
+    .changeColor{
+        @apply bg-white shadow-md shadow-zinc-500;
+    }
+    .changeColor a {
+        @apply text-black;
+    }
+    .changeColor a:hover{
+        @apply text-white;
+    }
+    .changeColor .button{
+        @apply border border-black text-white
+    }
 }
 
 @font-face {
@@ -61,7 +74,7 @@ span{
 		transform: scale(1) translateY(-2250%) translateX(-100%);
 		opacity: 0;
 	}
-} 
+}
 
 /* Animation de soulignage de liens (balises <a>) */
 .link-underline {
@@ -76,3 +89,5 @@ span{
     background-size: 100% 3px;
     background-position: 0 100%
 }
+
+

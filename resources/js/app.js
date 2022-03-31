@@ -73,14 +73,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
         })
     }
 
-    function SwitchNavColorOnScroll(){
 
-    }
-  
+    // function SwitchNavColorOnScroll(){
+    //     const nav = document.querySelector('nav');
+    //     const header = document.querySelector('header');
+
+    //     const observer = new IntersectionObserver(entries => {
+    //         entries.forEach(entry => {
+    //             if (entry.isIntersecting) {
+    //                 nav.classList.remove('changeColor');
+    //             } else {
+    //                 nav.classList.add('changeColor');
+    //             }
+    //         })
+    //     })
+
+    //     observer.observe('header');
+    // }
+
     // Appel constant par interval de la fonction createSparkle
     setInterval(CreateSparkle, 200);
 
     // Création des évenements concernant la navigation
     SwitchNavigationVisibility();
+
+    // SwitchNavColorOnScroll();
 
 })

@@ -12,7 +12,7 @@
         oncontextmenu="return false">
 
         {{-- Vidéo en Background --}}
-        <video autoplay muted loop src="{{ asset('storage/video/wireBlock.mp4') }}" class="w-full" type="video/mp4">
+        <video autoplay muted loop src="{{ asset('storage\video\wireBlock.mp4') }}" class="w-full" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
