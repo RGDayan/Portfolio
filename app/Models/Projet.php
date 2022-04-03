@@ -10,23 +10,23 @@ class Projet extends Model
     use HasFactory;
 
     /**
-     * Get all of the technologies for the Projet
+     * The Outils that belong to the Projet
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function technologies()
+    public function Outils()
     {
-        return $this->hasMany(Technologie::class);
+        return $this->belongsToMany(Outil::class);
     }
 
     /**
-     * Get all of the outils for the Projet
+     * The Technologies that belong to the Projet
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function outils()
+    public function Technologies()
     {
-        return $this->hasMany(Outil::class);
+        return $this->belongsToMany(Technologie::class);
     }
 
     /**

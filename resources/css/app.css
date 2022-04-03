@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components{
+    /* Style du bouton de navigation affiché en dessous de 'md'*/
 	#btn_nav{
 		@apply fixed
         flex
@@ -13,47 +14,34 @@
         hover:bg-gray-500 hover:bg-opacity-50
         hover:shadow-orange-400
         transition-all
-		z-70;
+		z-70 md:invisible;
 	}
 
+    /* Changement de couleur de la nav au dessus de 'md' lorsqu'on scroll */
     .changeColor{
-        @apply bg-white shadow-md shadow-zinc-500;
-    }
+        @apply bg-white shadow-sm shadow-orange-400;}
     .changeColor a {
-        @apply text-black;
-    }
-    .changeColor a:hover{
-        @apply text-white;
-    }
+        @apply md:text-black;}
     .changeColor .button{
-        @apply border border-black text-white
+        @apply border border-black text-white}
+
+    strong{
+        @apply
+        bg-gradient-to-br
+        from-yellow-500 to-orange-600
+        bg-clip-text
+        text-transparent;
     }
 }
 
-@font-face {
-	font-family: "Shippori";
-	src: url("/storage/app/public/font/ShipporiAntique-Regular.ttf") format('truetype');
-}
-@font-face {
-	font-family: "Mukta";
-	src: url("/storage/app/public/font/Mukta-Regular.ttf") format('truetype');
-}
-
-.font-mukta{
-	font-family: "Mukta";
-}
-
-.font-shippori{
-	font-family: "Shippori";
-}
-
-/*Animation en background*/
+/* Style des sparkles */
 span{
 	position: absolute;
 	pointer-events: none;
 	background: #A46D04;
 	animation: animate 3s linear infinite;
 	z-index: -1000;}
+/* Mouvement des sparkles */
 @keyframes animate{
 	0%
 	{
@@ -77,17 +65,41 @@ span{
 }
 
 /* Animation de soulignage de liens (balises <a>) */
-.link-underline {
+.link-underline{
     border-bottom-width: 0;
     background-image: linear-gradient(0.25turn, rgb(255, 147, 46), rgb(255, 255, 0));
     background-size: 0 3px;
     background-position: 0 100%;
     background-repeat: no-repeat;
-    transition: background-size .5s ease-in-out;
-}
-.link-underline:hover {
+    transition: background-size .5s ease-in-out;}
+.link-underline:hover{
     background-size: 100% 3px;
-    background-position: 0 100%
+    background-position: 0 100%;}
+
+/* Animation des flip card Compétences */
+    .flip-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;}
+    .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;}
+    .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);    }
+    .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;}
+    .flip-card-back {
+    transform: rotateY(180deg);    }
+
+
+.div_hover:hover .bg_hover{
+    background: transparent;
 }
-
-

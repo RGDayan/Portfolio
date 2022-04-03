@@ -15,11 +15,11 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="/Portfolio/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="/Portfolio/node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 
     {{-- Javascript --}}
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
 </head>
 
@@ -29,9 +29,7 @@
             id="sparkle">
 
     {{-- Bouton de navigation --}}
-    <div
-        class="md:invisible "
-        id="btn_nav">
+    <div id="btn_nav">
         {{-- Ouvrir le menu de nav --}}
         <ion-icon
             name="menu-outline"
@@ -47,12 +45,12 @@
     <nav class="fixed md:block
         w-0 h-full
         bg-gradient-to-b from-orange-300 via-orange-500 to-orange-700
-        bg-opacity-75
         text-white text-center text-xl font-semibold
         overflow-hidden
         transition-all duration-300 ease-in-out
         z-60
-        md:w-full md:h-16 md:bg-none" id="menu_nav">
+        md:w-full md:h-16 md:bg-none
+        " id="menu_nav">
 
         {{-- Liste des liens aux pages --}}
         <ul class="flex flex-col
@@ -60,13 +58,7 @@
             justify-evenly
             md:flex-row md:items-center">
 
-            <li><a href="{{ route('accueil') }}" class="link-underline link-underline-white">Accueil</a></li>
-            <li><a href="{{ route('projets') }}" class="link-underline link-underline-white">Mes projets</a></li>
-            <li><a href="#" class="link-underline link-underline-white">Mes compétences</a></li>
-            <li><a href="#" class="link-underline link-underline-white">Mes expériences professionnelles</a></li>
-            <li><a href="#" class="link-underline link-underline-white">Mon parcours</a></li>
-            <li><a href="#" class="link-underline link-underline-white">Mon CV</a></li>
-            <li><a href="#" class="link-underline link-underline-white">Contact</a></li>
+            @yield('menu_nav')
 
         </ul>
     </nav>

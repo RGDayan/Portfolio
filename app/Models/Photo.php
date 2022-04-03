@@ -14,7 +14,7 @@ class Photo extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function projet()
+    public function Projet()
     {
         return $this->belongsTo(Projet::class);
     }

@@ -8,14 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Outil extends Model
 {
     use HasFactory;
-    
+
     /**
-     * Get all of the projets for the Technologie
+     * The Projets that belong to the Outil
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function projets(): HasMany
+    public function Projets()
     {
-        return $this->hasMany(Projet::class);
+        return $this->belongsToMany(Projet::class);
     }
 }

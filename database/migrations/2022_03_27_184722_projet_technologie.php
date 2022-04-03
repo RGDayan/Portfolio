@@ -13,10 +13,10 @@ class ProjetTechnologie extends Migration
      */
     public function up()
     {
-        Schema::create('projet_techologie', function (Blueprint $table) {
+        Schema::create('projet_technologie', function (Blueprint $table) {
+            $table->id();
             $table->foreignId('projet_id')->constrained();
             $table->foreignId('technologie_id')->constrained();
-            $table->primary(['projet_id','technologie_id']);
         });
     }
 

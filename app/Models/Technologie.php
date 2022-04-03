@@ -10,12 +10,12 @@ class Technologie extends Model
     use HasFactory;
 
     /**
-     * Get all of the projets for the Technologie
+     * The Projets that belong to the Technologie
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function projets(): HasMany
+    public function Projets(): BelongsToMany
     {
-        return $this->hasMany(Projet::class);
+        return $this->belongsToMany(Projet::class);
     }
 }

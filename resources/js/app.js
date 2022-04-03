@@ -70,26 +70,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
             // Affichage du menu de navigation
             menu_nav.classList.toggle('w-0');
             menu_nav.classList.toggle('w-full');
+            menu_nav.classList.toggle('changeColor');
         })
     }
 
 
-    // function SwitchNavColorOnScroll(){
-    //     const nav = document.querySelector('nav');
-    //     const header = document.querySelector('header');
+    function SwitchNavColorOnScroll(){
+        const options = {
+            rootMargin: '-12%'
+        }
+        const nav = document.querySelector('nav');
+        const header = document.getElementById('header');
 
-    //     const observer = new IntersectionObserver(entries => {
-    //         entries.forEach(entry => {
-    //             if (entry.isIntersecting) {
-    //                 nav.classList.remove('changeColor');
-    //             } else {
-    //                 nav.classList.add('changeColor');
-    //             }
-    //         })
-    //     })
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    nav.classList.remove('changeColor');
+                } else {
+                    nav.classList.add('changeColor');
+                }
+            })
+        }, options)
 
-    //     observer.observe('header');
-    // }
+        observer.observe(header);
+    }
 
     // Appel constant par interval de la fonction createSparkle
     setInterval(CreateSparkle, 200);
@@ -97,6 +101,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Création des évenements concernant la navigation
     SwitchNavigationVisibility();
 
-    // SwitchNavColorOnScroll();
+    // Observation de l'intersection entre la nav et le header
+    SwitchNavColorOnScroll();
 
 })

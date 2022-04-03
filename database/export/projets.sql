@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 31 mars 2022 à 19:49
+-- Généré le : sam. 02 avr. 2022 à 17:40
 -- Version du serveur :  5.7.31
--- Version de PHP : 7.4.10
+-- Version de PHP : 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,16 +30,16 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `projets`;
 CREATE TABLE IF NOT EXISTS `projets` (
   `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `titre` varchar(191) COLLATE utf8_unicode_ci NOT NULL,
-  `intro` varchar(191) COLLATE utf8_unicode_ci NOT NULL,
-  `type` varchar(191) COLLATE utf8_unicode_ci NOT NULL,
+  `titre` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `intro` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `type` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
   `contexte` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
   `description` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
-  `poste` varchar(191) COLLATE utf8_unicode_ci NOT NULL,
+  `poste` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
   `taille_equipe` int(11) NOT NULL,
-  `github` varchar(191) COLLATE utf8_unicode_ci NOT NULL,
-  `lien` varchar(191) COLLATE utf8_unicode_ci NOT NULL,
-  `img` varchar(191) COLLATE utf8_unicode_ci NOT NULL,
+  `github` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `lien` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `img` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `etat` varchar(500) COLLATE utf8_unicode_ci NOT NULL,

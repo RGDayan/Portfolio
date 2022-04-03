@@ -1,9 +1,4 @@
-Page d'acceuil :
-    Ajouter des liens vers les autres pages
-    Style du lien en bleu ? pas d'anim, chiant
-
 Vues :
-    Les Projets
     Les compétences
     Expériences
     Parcours
@@ -11,36 +6,24 @@ Vues :
     Contact
 
 Les projets :
-	Présentation succinte de chaque projets (contexte)
-	Lien vers Les-dit projets (+ Veille technologique)
-	Prise d'écran du projet
+	Veille technologique
 
 Un projet :
-	Technologies utilisées
-	Poste occupé
-	Taille de l'équipe
-	Environnement (OS + IDE)
 	Lien vers le GitHub (si il y a)
-	
-Les compétences :
-	Les compétences générales
-	Compétences techniques
-	Animations / cartes
-	Modèle d'Arbre de compétence
-	
-Expériences :
-	Modèle de cartes
-	Recto : entreprise + poste
-	Verso : Missions, évolution, travail en général
 
 Parcours d'études :
-	Modèle de promenade en scroll horinzontal ?
-	frise chronologique + expériences
-	Bulle d'information sur les études
-	Lien vers les expériences
-
-CV :
-	Mettre à jour en html css
+	Seeding des formations
+	Seeding des etablissements
 	
 Contact :
 	Mailto
+	gatcha / gapcha
+
+Recherches d'images :
+	Compétences
+	Projets
+	Expériences
+	Parcours
+	missions
+	Formation
+	Etablissement

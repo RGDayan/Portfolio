@@ -14,9 +14,9 @@ class OutilProjet extends Migration
     public function up()
     {
         Schema::create('outil_projet', function (Blueprint $table) {
+            $table->id();
             $table->foreignId('outil_id')->constrained();
             $table->foreignId('projet_id')->constrained();
-            $table->primary(['outil_id', 'projet_id']);
         });
     }
 
