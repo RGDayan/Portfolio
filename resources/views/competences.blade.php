@@ -54,11 +54,11 @@
                             justify-center items-center">
                             <div class="absolute
                                 w-full h-full
-                                bg-cover bg-no-repeat brightness-75
+                                bg-cover bg-no-repeat brightness-50
                                 rounded-lg -z-10 transition-all"
                                 style="background-image: url('{{ asset($competence->img_front) }}')"></div>
                             <h2 class="text-2xl font-extrabold
-                                bg-gradient-to-br from-yellow-500 to-orange-600 via-
+                                bg-gradient-to-br from-yellow-400 to-orange-500
                                 bg-clip-text text-transparent">
                                 {{ $competence->libelle }}
                             </h2>
@@ -72,7 +72,7 @@
                                 bg-cover bg-no-repeat brightness-50
                                 rounded-lg -z-10 transition-all"
                                 style="background-image: url('{{ asset($competence->img_back) }}')"></div>
-                            <p class="font-semibold text-white">
+                            <p class="font-medium text-white text-lg">
                                 {{ $competence->description }}
                             </p>
                         </div>

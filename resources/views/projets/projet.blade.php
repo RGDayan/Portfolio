@@ -64,7 +64,7 @@
                     bg-gradient-to-br from-yellow-500 to-orange-600
                     bg-clip-text text-transparent
                     ">
-                    Outils utilisées
+                    Outils utilisés
                 </h2>
                 {{-- Données --}}
                 <div class="flex flex-col

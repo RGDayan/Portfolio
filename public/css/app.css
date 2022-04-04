@@ -1490,6 +1490,9 @@ strong {
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
 }
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
+}
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
 }
@@ -1506,6 +1509,10 @@ strong {
   --tw-gradient-from: #eab308;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(234 179 8 / 0));
 }
+.from-yellow-400 {
+  --tw-gradient-from: #facc15;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(250 204 21 / 0));
+}
 .from-orange-300 {
   --tw-gradient-from: #fdba74;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(253 186 116 / 0));
@@ -1513,10 +1520,6 @@ strong {
 .from-zinc-800 {
   --tw-gradient-from: #27272a;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(39 39 42 / 0));
-}
-.from-yellow-400 {
-  --tw-gradient-from: #facc15;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(250 204 21 / 0));
 }
 .from-white {
   --tw-gradient-from: #fff;
@@ -1528,14 +1531,14 @@ strong {
 .to-orange-600 {
   --tw-gradient-to: #ea580c;
 }
+.to-orange-500 {
+  --tw-gradient-to: #f97316;
+}
 .to-orange-700 {
   --tw-gradient-to: #c2410c;
 }
 .to-zinc-800 {
   --tw-gradient-to: #27272a;
-}
-.to-orange-500 {
-  --tw-gradient-to: #f97316;
 }
 .to-white {
   --tw-gradient-to: #fff;
@@ -1721,21 +1724,12 @@ strong {
   --tw-shadow-color: #18181b;
   --tw-shadow: var(--tw-shadow-colored);
 }
-.outline-dashed {
-  outline-style: dashed;
-}
-.outline-dotted {
-  outline-style: dotted;
-}
-.outline-double {
-  outline-style: double;
+.brightness-50 {
+  --tw-brightness: brightness(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .brightness-75 {
   --tw-brightness: brightness(.75);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-.brightness-50 {
-  --tw-brightness: brightness(.5);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition-all {
@@ -1819,8 +1813,8 @@ span{
 
 /* Animation des flip card Compétences */
     .flip-card {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     perspective: 1000px;}
     .flip-card-inner {
     position: relative;
