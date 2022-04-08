@@ -14,7 +14,7 @@ class AjoutFkProjetPhoto extends Migration
     public function up()
     {
         Schema::table('photos', function (Blueprint $table) {
-            $table->foreignId('projet_id')->constrained();
+            $table->foreignId('projet_id')->constrained()->after('lien');
         });
     }
 

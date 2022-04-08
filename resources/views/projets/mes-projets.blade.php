@@ -55,9 +55,9 @@
                                 rounded-xl -z-20" style="background-image: url('{{ asset($projet->img) }}')"></div>
 
                     <div class="absolute w-full h-full
-                                bg-orange-600 bg-opacity-10 bg_hover
+                                bg-transparent bg_hover
                                 rounded-xl
-                                transition-all duration-500
+                                transition-all duration-300
                                 -z-10"></div>
 
                     <div class="p-10">
@@ -65,8 +65,7 @@
                             <h2 class="text-2xl font-extrabold
                                             bg-gradient-to-br from-yellow-500 to-orange-600
                                             bg-clip-text text-transparent">{{ $projet->titre }}</h2>
-                            <p class="pt-6
-                                            text-justify font-semibold text-white">
+                            <p class="pt-6 text-lg text-justify font-semibold text-white">
                                 {{ $projet->intro }}
                             </p>
                         </a>

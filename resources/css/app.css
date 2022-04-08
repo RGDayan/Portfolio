@@ -78,28 +78,29 @@ span{
 
 /* Animation des flip card Compétences */
     .flip-card {
-    width: 400px;
-    height: 300px;
-    perspective: 1000px;}
+        width: 400px;
+        height: 300px;
+        perspective: 1000px;}
     .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 1s;
-    transform-style: preserve-3d;}
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;}
     .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);    }
+        transform: rotateY(180deg);    }
     .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;}
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;}
     .flip-card-back {
-    transform: rotateY(180deg);    }
+        transform: rotateY(180deg);    }
 
 
 .div_hover:hover .bg_hover{
-    background: transparent;
+    background-color: rgb(194 65 12 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.2;
 }

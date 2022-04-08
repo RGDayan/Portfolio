@@ -1486,12 +1486,12 @@ strong {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
+.bg-transparent {
+  background-color: transparent;
+}
 .bg-orange-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
-}
-.bg-opacity-20 {
-  --tw-bg-opacity: 0.2;
 }
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
@@ -1640,13 +1640,13 @@ strong {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .font-normal {
   font-weight: 400;
@@ -1662,6 +1662,9 @@ strong {
 }
 .font-bold {
   font-weight: 700;
+}
+.font-black {
+  font-weight: 900;
 }
 .leading-tight {
   line-height: 1.25;
@@ -1730,6 +1733,10 @@ strong {
 }
 .brightness-75 {
   --tw-brightness: brightness(.75);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.brightness-100 {
+  --tw-brightness: brightness(1);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition-all {
@@ -1813,30 +1820,31 @@ span{
 
 /* Animation des flip card Compétences */
     .flip-card {
-    width: 400px;
-    height: 300px;
-    perspective: 1000px;}
+        width: 400px;
+        height: 300px;
+        perspective: 1000px;}
     .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 1s;
-    transform-style: preserve-3d;}
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;}
     .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);    }
+        transform: rotateY(180deg);    }
     .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;}
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;}
     .flip-card-back {
-    transform: rotateY(180deg);    }
+        transform: rotateY(180deg);    }
 
 
 .div_hover:hover .bg_hover{
-    background: transparent;
+    background-color: rgb(194 65 12 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.2;
 }
 
 

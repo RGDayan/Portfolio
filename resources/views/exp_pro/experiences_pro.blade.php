@@ -60,9 +60,9 @@
                                 rounded-xl -z-20" style="background-image: url('{{ asset($exp->img) }}')"></div>
 
                     <div class="absolute w-full h-full
-                                bg-orange-600 bg-opacity-20 bg_hover
+                                bg-transparent bg_hover
                                 rounded-xl
-                                transition-all duration-500
+                                transition-all duration-300
                                 -z-10"></div>
 
                     <div class="p-10">

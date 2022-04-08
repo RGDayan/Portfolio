@@ -70,12 +70,12 @@
                                         justify-center items-center">
                             <div class="absolute
                                             w-full h-full
-                                            bg-cover bg-no-repeat brightness-75
+                                            bg-cover bg-no-repeat brightness-50
                                             rounded-lg -z-10 transition-all"
                                 style="background-image: url('{{ asset($mission->img_front) }}')"></div>
                             <h2 class="px-6
-                                text-2xl font-extrabold
-                                bg-gradient-to-br from-yellow-500 to-orange-600 via-
+                                text-4xl font-black
+                                bg-gradient-to-br from-yellow-500 to-orange-600
                                 bg-clip-text text-transparent">
                                 {{ $mission->libelle }}
                             </h2>
@@ -89,7 +89,7 @@
                                             bg-cover bg-no-repeat brightness-50
                                             rounded-lg -z-10 transition-all"
                                 style="background-image: url('{{ asset($mission->img_back) }}')"></div>
-                            <p class="font-semibold text-white">
+                            <p class="font-semibold text-lg text-white">
                                 {{ $mission->description }}
                             </p>
                         </div>
