@@ -1,3 +1,30 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : 127.0.0.1:3306
+-- Généré le : sam. 09 avr. 2022 à 18:42
+-- Version du serveur :  5.7.31
+-- Version de PHP : 7.4.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données : `portfolio`
+--
+
+--
+-- Déchargement des données de la table `competences`
+--
+
 INSERT INTO `competences` (`id`, `libelle`, `description`, `img_front`, `img_back`, `created_at`, `updated_at`) VALUES
 (1, 'Développement Orienté Objet', 'La Programmation Orienté Objet (POO) est un des grands principe du développement informatique. \r\nCe développement consiste en la manipulation de briques informatiques appelés \"Objets\". \r\nIls contiennent des données/valeurs qui sont traités via l\'objet.', 'storage/image/competence/poo.jpg', 'storage/image/competence/diagramme_classe.jpg', NULL, NULL),
 (2, 'Gestion de Projet Informatique', 'J\'ai gérer des projets informatiques depuis ma première année de BTS SIO. \r\nLa planification, la récupération du besoin, la recherche et la distribution des tâches, je me suis occupé de ces différents points en collaboration avec mes coéquipiers.', 'storage/image/competence/fond_gestion_projet.png', 'storage/image/competence/gestion_projet.jpg', NULL, NULL),
@@ -5,11 +32,16 @@ INSERT INTO `competences` (`id`, `libelle`, `description`, `img_front`, `img_bac
 (4, 'Adaptation à une demande technologique', 'Aujourd\'hui, les logiciels et applications peuvent être développés dans de nombreux langages de programmation. Le choix de la technologie d\'un projet est souvent celui du client. Dans d\'autres cas, il faut lui exposer une étude technologique. Dans tout les cas, le développeur doit s\'adapter aux technologies choisies.', 'storage/image/competence/technologie.jpg', 'storage/image/competence/adaptabilite.jpg', NULL, NULL),
 (5, 'TroubleShooting et Maintenance', 'La résolution de problèmes rencontrés lors de l\'utilisation d\'une application est essentielle dans la relation entre l\'utilisateur et le fournisseur. Développer une application en maintenant les fonctionnalités au travers des versions (retro-compatibilité) et réduire le nombre d\'erreur est une compétence nécessaire à tout bon développeur.', 'storage/image/competence/error.jpg', 'storage/image/competence/maintenance.jpg', NULL, NULL);
 
+--
+-- Déchargement des données de la table `etablissements`
+--
 
 INSERT INTO `etablissements` (`id`, `libelle`, `description`, `lien`, `url_map`, `logo`, `img`, `created_at`, `updated_at`) VALUES
 (1, 'Lycée Pasteur Mont-Roland à Dôle', 'Ce lycée est publique et dispense des formations allant du Baccalauréat au Master Bac +5.', 'http://pasteurmontroland.com/', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10865.013361155554!2d5.494079!3d47.094104!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10455424f077465e!2sLycee%20Pasteur%20Mont%20Roland!5e0!3m2!1sen!2sfr!4v1649012772869!5m2!1sen!2sfr\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"', 'storage/image/etablissements/logo_pasteur_mont_roland.png', 'storage/image/etablissements/lycee_pasteur_mont_roland.png', NULL, NULL);
 
-
+--
+-- Déchargement des données de la table `experiences__pros`
+--
 
 INSERT INTO `experiences__pros` (`id`, `poste`, `secteur`, `entreprise`, `date_debut`, `date_fin`, `img`, `type_contrat`, `created_at`, `updated_at`) VALUES
 (2, 'Serveur ', 'Restauration traditionnelle', 'SARL Grill & Cow', 'Mars 2017', 'Juillet 2017', 'storage/image/experiences/grill_front.jpg', 'CDI', NULL, NULL),
@@ -20,11 +52,42 @@ INSERT INTO `experiences__pros` (`id`, `poste`, `secteur`, `entreprise`, `date_d
 (9, 'Technicien informatique et support', 'Santé', 'SARL MG-PRO', 'Octobre 2020', 'Octobre 2021', 'storage/image/experiences/mg_pro.png', 'en Alternance', NULL, NULL),
 (10, 'Technicien informatique', 'Concession autoroutière', 'SA APRR', 'Novembre 2021', 'Toujours en cours', 'storage/image/experiences/APRR.jpg', 'en Alternance', NULL, NULL);
 
-
+--
+-- Déchargement des données de la table `formations`
+--
 
 INSERT INTO `formations` (`id`, `libelle`, `description`, `date_debut`, `date_fin`, `en_cours`, `etablissement_id`, `created_at`, `updated_at`) VALUES
 (1, 'BTS SIO', 'BTS Service Informatique aux Organisations Option B Solutions Logiciel et Applications Metier', 'Septembre 2020', 'Août 2022', 1, 1, NULL, NULL);
 
+--
+-- Déchargement des données de la table `migrations`
+--
+
+INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
+(1, '2014_10_12_000000_create_users_table', 1),
+(2, '2014_10_12_100000_create_password_resets_table', 1),
+(3, '2019_08_19_000000_create_failed_jobs_table', 1),
+(4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
+(5, '2022_03_27_183315_create_projets_table', 1),
+(6, '2022_03_27_184627_create_technologies_table', 1),
+(7, '2022_03_27_184722_projet_technologie', 1),
+(8, '2022_03_27_185453_create_outils_table', 1),
+(9, '2022_03_27_185719_outil_projet', 1),
+(10, '2022_03_29_075854_ajout_etat_projet', 1),
+(11, '2022_03_29_081410_create_photos_table', 1),
+(12, '2022_03_29_082438_ajout_fk_projet_photo', 1),
+(13, '2022_04_02_191737_create_competences_table', 1),
+(14, '2022_04_03_135653_create_experiences__pros_table', 1),
+(15, '2022_04_03_140754_create_missions_table', 1),
+(16, '2022_04_03_171224_add_img_to_experiences__pros', 1),
+(17, '2022_04_03_172237_add_type_contrat_to_experiences__pros', 1),
+(18, '2022_04_03_175936_add_description_img_to_missions', 1),
+(19, '2022_04_03_183043_create_etablissements_table', 1),
+(20, '2022_04_03_193010_create_formations_table', 1);
+
+--
+-- Déchargement des données de la table `missions`
+--
 
 INSERT INTO `missions` (`id`, `libelle`, `description`, `img_front`, `img_back`, `experiences__pro_id`, `created_at`, `updated_at`) VALUES
 (2, 'Maintenance des outils/scripts de maintenance de Gare de Péage', 'test', 'storage/image/experiences/APRR.jpg', 'storage/image/experiences/APRR.jpg', 10, NULL, NULL),
@@ -44,7 +107,9 @@ INSERT INTO `missions` (`id`, `libelle`, `description`, `img_front`, `img_back`,
 (16, 'Gérer les stocks', 'Je recevais les commandes passées par ma gérante le Lundi. Ce même jour, je nettoyais les stocks et ranger les produits pour selon une logique de rangement permettant à chaque employé de retrouver rapidement le produit voulu et selon le principe FIFO (First in First out). ', 'storage/image/missions/fifo.jpg', 'storage/image/missions/rangement.jpg', 3, NULL, NULL),
 (17, 'Evolution en interne', 'La chaîne de restaurants MacDonalds\' promet une évolution en interne rapide si l\'envie et les efforts sont au rendez-vous. Je suis passé formateur lors de mon 6ème mois et ai évolué en tant que Manager Opérationnel au bout d\'un an.', '', '', 4, NULL, NULL);
 
-
+--
+-- Déchargement des données de la table `outils`
+--
 
 INSERT INTO `outils` (`id`, `libelle`, `abbreviation`, `description`, `created_at`, `updated_at`) VALUES
 (1, 'Visual Studio Code', 'VSCode', 'IDE (environnement de développement informatique) développé par Microsoft doté d\'un marketplace d\'extension gratuites', NULL, NULL),
@@ -58,8 +123,36 @@ INSERT INTO `outils` (`id`, `libelle`, `abbreviation`, `description`, `created_a
 (9, 'Microsoft SQL Server', 'SQL Server', 'SGBD développé par Microsoft pour application lourdes développées dans un langage de Microsoft', NULL, NULL),
 (10, 'SharePoint', 'SP', 'Outil de listing de données de Microsoft pouvant être utilisé avec le pack Office365', NULL, NULL);
 
+--
+-- Déchargement des données de la table `outil_projet`
+--
 
+INSERT INTO `outil_projet` (`id`, `outil_id`, `projet_id`) VALUES
+(1, 3, 2),
+(2, 4, 2),
+(3, 3, 3),
+(4, 4, 3),
+(5, 3, 4),
+(6, 4, 4),
+(7, 5, 4),
+(8, 8, 4),
+(9, 2, 5),
+(10, 5, 5),
+(11, 9, 5),
+(12, 1, 6),
+(13, 4, 6),
+(14, 5, 6),
+(15, 8, 6),
+(16, 10, 7),
+(17, 2, 8),
+(18, 5, 8),
+(19, 7, 8),
+(20, 2, 1),
+(21, 5, 1);
 
+--
+-- Déchargement des données de la table `photos`
+--
 
 INSERT INTO `photos` (`id`, `lien`, `created_at`, `updated_at`, `projet_id`) VALUES
 (1, 'storage/image/projets/TickApp/logo-sharepoint.png', NULL, NULL, 7),
@@ -111,6 +204,25 @@ INSERT INTO `projets` (`id`, `titre`, `intro`, `type`, `contexte`, `description`
 -- Déchargement des données de la table `projet_technologie`
 --
 
+INSERT INTO `projet_technologie` (`id`, `projet_id`, `technologie_id`) VALUES
+(1, 2, 1),
+(2, 3, 1),
+(3, 4, 1),
+(4, 2, 2),
+(5, 3, 2),
+(6, 4, 2),
+(7, 4, 3),
+(8, 2, 4),
+(9, 5, 5),
+(10, 5, 7),
+(11, 6, 9),
+(12, 6, 10),
+(13, 6, 11),
+(14, 7, 13),
+(15, 8, 6),
+(16, 8, 5),
+(17, 8, 7),
+(18, 1, 8);
 
 --
 -- Déchargement des données de la table `technologies`
@@ -135,47 +247,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-INSERT INTO `outil_projet` (`id`, `outil_id`, `projet_id`) VALUES
-(1, 3, 2),
-(2, 4, 2),
-(3, 3, 3),
-(4, 4, 3),
-(5, 3, 4),
-(6, 4, 4),
-(7, 5, 4),
-(8, 8, 4),
-(9, 2, 5),
-(10, 5, 5),
-(11, 9, 5),
-(12, 1, 6),
-(13, 4, 6),
-(14, 5, 6),
-(15, 8, 6),
-(16, 10, 7),
-(17, 2, 8),
-(18, 5, 8),
-(19, 7, 8),
-(20, 2, 1),
-(21, 5, 1);
-
-
-INSERT INTO `projet_technologie` (`id`, `projet_id`, `technologie_id`) VALUES
-(1, 2, 1),
-(2, 3, 1),
-(3, 4, 1),
-(4, 2, 2),
-(5, 3, 2),
-(6, 4, 2),
-(7, 4, 3),
-(8, 2, 4),
-(9, 5, 5),
-(10, 5, 7),
-(11, 6, 9),
-(12, 6, 10),
-(13, 6, 11),
-(14, 7, 13),
-(15, 8, 6),
-(16, 8, 5),
-(17, 8, 7),
-(18, 1, 8);
