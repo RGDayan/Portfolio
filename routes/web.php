@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\CompetenceController;
 use App\Http\Controllers\ExperiencesProController;
@@ -41,4 +42,5 @@ Route::get('/formations', [FormationController::class, 'index'])->name('parcours
 Route::get('/formation/{id}', [FormationController::class, 'show'])->name('formation');
 
 // Contact
-Route::get('/contact', [ProjetController::class, 'show'])->name('contact');
+Route::get('/contact', [Controller::class, 'contact'])->name('contact');
+Route::post('/contact', [Controller::class, 'contactRequest'])->name('contact-request');

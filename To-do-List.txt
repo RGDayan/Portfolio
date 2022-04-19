@@ -1,8 +1,4 @@
 Vues :
-    Les compétences
-    Expériences
-    Parcours
-    CV
     Contact
 
 Les projets :
@@ -10,20 +6,25 @@ Les projets :
 
 Un projet :
 	Lien vers le GitHub (si il y a)
+	Mettre les projets voulus sur le GitHub
 
-Parcours d'études :
+Seeding : 
+	Seeding des missions d'expérience pro
 	Seeding des formations
 	Seeding des etablissements
 	
 Contact :
 	Mailto
-	gatcha / gapcha
+	captcha
 
 Recherches d'images :
-	Compétences
-	Projets
-	Expériences
-	Parcours
 	missions
 	Formation
 	Etablissement
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+MISE EN LIGNE DU PORTFOLIO AVEC BASE DE DONNEES :
+	Si l'hébergeur ne prend pas de base, passer en SQLite
+	
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

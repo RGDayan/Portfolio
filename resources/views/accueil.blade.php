@@ -41,8 +41,7 @@
         {{-- Logo --}}
         <img class="w-16
                     rounded-full
-                    shadow-4xl-center shadow-orange-600
-                    anti
+                    shadow-4xl-center shadow-amber-400
                     phone:w-44" src="{{ asset('storage/image/accueil/Logo_Dayan.png') }}"/>
 
         <div>

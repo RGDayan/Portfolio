@@ -13,7 +13,7 @@
 
     <main class="flex flex-col
             justify-center
-            md:p-10">
+            pt-20">
 
         <h1 class="m-4 mt-10
                 text-center text-xl font-extrabold
@@ -84,7 +84,6 @@
 
         <div class="m-2 p-5
                     self-center
-                    bg-white
                     shadow-lg shadow-orange-400
                     rounded-xl
                     md:w-3/4">

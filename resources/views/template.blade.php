@@ -23,9 +23,11 @@
 
 </head>
 
-<body class="w-full h-fit min-h-full
-            m-0 p-0
-            overflow-x-hidden"
+<body class="flex flex-col
+    w-full h-fit min-h-full
+    m-0 p-0
+    justify-between
+    overflow-x-hidden"
             id="sparkle">
 
     {{-- Bouton de navigation --}}

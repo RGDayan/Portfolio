@@ -12,11 +12,11 @@
 
 @section('main')
 
-    <main class="flex flex-col
-                justify-center
-                md:p-10">
+    <main class="flex flex-col 
+        pt-10
+        justify-center ">
 
-        <h1 class="m-4 mt-10
+        <h1 class="m-4 md:mt-20
                     text-center text-2xl font-extrabold
                     bg-gradient-to-br from-yellow-400 to-orange-500
                     bg-clip-text text-transparent" id="header">{{ $experience->poste }}</h1>
