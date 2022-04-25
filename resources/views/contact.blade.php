@@ -25,14 +25,18 @@
 
     {{-- Containeur --}}
     <div class="flex flex-col md:flex-row
-        w-full h-fit
-        justify-between
+        w-full h-fit max-w-4xl
+        mb-10
+        justify-between self-center
         rounded-lg
         shadow-md shadow-orange-500">
         <div class="p-8">
 
             {{-- Formulaire de contact --}}
-            <form method="POST" action="{{ route('contact-request') }}">
+            <form method="POST" 
+                action="{{ route('contact-request') }}"
+                class="flex flex-col
+                    justify-center">
                 @csrf
 
                 {{-- Champ Nom avec validation de données --}}

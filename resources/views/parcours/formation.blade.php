@@ -62,9 +62,9 @@
         </h1>
 
         {{-- Logo de l'établissement --}}
-        <a href="{{ $formation->Etablissement->lien }}" class="flex 
-            w-full
-            justify-center
+        <a href="{{ $formation->Etablissement->lien }}" class="flex
+            w-fit
+            self-center justify-center
             link_underline">
             <img src="{{ asset($formation->Etablissement->logo) }}"
                 class="max-w-xl max-h-40
@@ -74,7 +74,8 @@
 
         {{-- Informations sur l'établissement de la formation --}}
         <div class="flex flex-col
-            w-screen md:w-full
+            w-screen md:w-full max-w-5xl
+            self-center
             items-center
             px-10">
 
@@ -97,14 +98,14 @@
                 
                 {{-- Description --}}
                 <p class="text-center">
-                    {{ $formation->Etablissement->libelle }}
                     {{ $formation->Etablissement->description }}
                 </p>
             </div>
 
         </div>
 
-        <div class="w-full md:w-3/5 
+        <div class="flex flex-col
+            w-full md:w-3/5 
             mb-10
             self-center">
             {{-- Image de l'Etablissement --}}
@@ -115,7 +116,7 @@
             <div class="flex flex-col
                 p-10
                 mb-4
-                justify-center self-center
+                justify-center 
                 rounded-lg
                 bg-gradient-to-br from-yellow-500 to-orange-600">
 

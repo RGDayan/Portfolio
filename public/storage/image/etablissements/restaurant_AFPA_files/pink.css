@@ -1,0 +1,12 @@
+body, #footer { background-color:#e4e4e4; }
+#background { background: #f7f7f7 }
+#top { background: #222; border-color:#111;}
+#header { background: url(pink/bg.jpg) no-repeat top center #763aa5; border-color:#444; }
+
+#footer-widgets { background-color:#e9e9e9; border-top:1px solid #ccc;}
+#footer { border-top:1px solid #ddd;}
+.box {Êbackground-color:#fff; }
+.widget, #post-author, #main #connect, #main h3 { background-color: #fafafa; border-color: #dedede; }
+.widget h3{background:#ebebeb;border:1px solid #dedede;}
+a, a:hover, #top .subscribe a { color: #4081AF; }
+
